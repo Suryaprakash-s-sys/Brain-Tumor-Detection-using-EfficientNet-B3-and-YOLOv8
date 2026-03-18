@@ -1,0 +1,36 @@
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+efficientnet-pytorch>=0.7.1
+timm>=0.9.0
+
+# Data & Preprocessing
+numpy>=1.24.0
+pandas>=2.0.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+scikit-learn>=1.3.0
+albumentations>=1.3.0
+
+# Training & Evaluation
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tqdm>=4.65.0
+tensorboard>=2.13.0
+
+# Web Interface
+flask>=2.3.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pymongo>=4.4.0
+python-multipart>=0.0.6
+
+# Utilities
+PyYAML>=6.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Jupyter
+jupyter>=1.0.0
+ipywidgets>=8.0.0

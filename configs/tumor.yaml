@@ -1,0 +1,26 @@
+# YOLOv8 Dataset Configuration
+# Brain Tumor MRI Detection Dataset
+
+path: ../../data            # Root dataset directory
+train: processed/train      # Training images (relative to path)
+val: processed/val          # Validation images
+test: processed/test        # Test images (optional)
+
+# Number of classes
+nc: 4
+
+# Class names
+names:
+  0: glioma
+  1: meningioma
+  2: pituitary_tumor
+  3: no_tumor
+
+# Dataset statistics
+dataset_info:
+  total_images: 2690
+  train_images: 2152       # 80%
+  test_images: 538         # 20%
+  source: Kaggle / Figshare / BraTS
+  image_type: MRI (T1-weighted contrast-enhanced)
+  annotation_format: YOLO (normalized bounding boxes)

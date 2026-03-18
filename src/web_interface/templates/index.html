@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain Tumor Detection System</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0f1117; color: #e0e0e0; }
+    header { background: #1a1d27; padding: 1.5rem 2rem; display: flex; align-items: center; gap: 1rem; }
+    header h1 { font-size: 1.4rem; color: #4caf88; }
+    header span { font-size: 0.85rem; color: #888; }
+    .hero { text-align: center; padding: 5rem 2rem 3rem; }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #fff; }
+    .hero p { max-width: 600px; margin: 0 auto 2rem; color: #aaa; line-height: 1.7; }
+    .btn { display: inline-block; padding: 0.9rem 2rem; border-radius: 8px; text-decoration: none;
+           background: #4caf88; color: #fff; font-weight: 600; transition: opacity 0.2s; }
+    .btn:hover { opacity: 0.85; }
+    .cards { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; padding: 2rem; }
+    .card { background: #1a1d27; border-radius: 12px; padding: 2rem; width: 260px; text-align: center; }
+    .card .icon { font-size: 2.5rem; margin-bottom: 0.8rem; }
+    .card h3 { color: #4caf88; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.9rem; color: #999; }
+    .metrics { background: #1a1d27; margin: 2rem; border-radius: 12px; padding: 2rem; }
+    .metrics h3 { color: #4caf88; margin-bottom: 1.5rem; text-align: center; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 0.8rem 1rem; text-align: left; border-bottom: 1px solid #2a2d3a; }
+    th { color: #4caf88; font-size: 0.85rem; text-transform: uppercase; }
+    td.val { font-weight: 600; color: #fff; }
+    footer { text-align: center; padding: 2rem; color: #555; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>🧠 Brain Tumor Detection System</h1>
+      <span>EfficientNet-B3 + YOLOv8 | K.L.N. College of Engineering</span>
+    </div>
+    <nav style="margin-left:auto;">
+      <a href="/upload" class="btn" style="font-size:0.9rem; padding:0.6rem 1.2rem;">Upload MRI</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>AI-Powered MRI Brain Tumor Detection</h2>
+    <p>Upload an MRI image to detect and classify brain tumors in real time using our hybrid deep learning pipeline.</p>
+    <a href="/upload" class="btn">Get Started →</a>
+  </section>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🔍</div>
+      <h3>Detection</h3>
+      <p>YOLOv8 localizes tumor regions with precise bounding boxes at ~12ms per image.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🏷️</div>
+      <h3>Classification</h3>
+      <p>EfficientNet-B3 classifies tumor type: Glioma, Meningioma, Pituitary, or No Tumor.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Results</h3>
+      <p>All analyses are stored securely in MongoDB for future reference and comparison.</p>
+    </div>
+  </div>
+
+  <div class="metrics">
+    <h3>Model Performance</h3>
+    <table>
+      <thead><tr><th>Model</th><th>Metric</th><th>Score</th></tr></thead>
+      <tbody>
+        <tr><td>EfficientNet-B3</td><td>Accuracy</td><td class="val">96.4%</td></tr>
+        <tr><td>EfficientNet-B3</td><td>F1-Score</td><td class="val">96.0%</td></tr>
+        <tr><td>YOLOv8</td><td>mAP@0.5</td><td class="val">94.8%</td></tr>
+        <tr><td>YOLOv8</td><td>Inference Time</td><td class="val">~12 ms</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    Final Year B.E. Project — Electronics and Communication Engineering<br>
+    Sankarram G · Sharann PG · Surya Prakash S | K.L.N. College of Engineering, 2025
+  </footer>
+</body>
+</html>

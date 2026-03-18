@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_metadata
+
+# Model weights (large files — use Git LFS or external storage)
+models/*.pt
+models/*.pth
+models/*.onnx
+models/yolov8_brain_tumor/
+
+# Data (do not commit raw MRI images)
+data/raw/
+data/processed/
+src/web_interface/uploads/
+src/web_interface/results/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & outputs
+runs/
+*.log
+tensorboard_logs/
