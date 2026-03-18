@@ -231,12 +231,6 @@ Then open `http://localhost:5000` in your browser to upload MRI images and get r
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
-
----
-
 ## 🙏 Acknowledgements
 
 We extend our gratitude to the faculty and management of K.L.N. College of Engineering for their support and guidance throughout this project.
